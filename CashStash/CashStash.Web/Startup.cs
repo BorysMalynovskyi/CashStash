@@ -11,6 +11,7 @@ using CashStash.Web.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using CashStash.Data.DbContext;
 
 namespace CashStash.Web
 {
