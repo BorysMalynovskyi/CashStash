@@ -13,25 +13,25 @@ import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavMenuComponent,
-    HomeComponent,
-    FetchDataComponent
-  ],
-  imports: [
-    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
-    HttpClientModule,
-    FormsModule,
-    ApiAuthorizationModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
-    ])
-  ],
-  providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }
-  ],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		NavMenuComponent,
+		HomeComponent,
+		FetchDataComponent
+	],
+	imports: [
+		BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+		HttpClientModule,
+		FormsModule,
+		ApiAuthorizationModule,
+		RouterModule.forRoot([
+			{ path: '', component: HomeComponent, pathMatch: 'full' },
+			{ path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
+		])
+	],
+	providers: [
+		{ provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }
+	],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
