@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace CashStash.Web.Data.Migrations
+namespace CashStash.Data.Migrations
 {
-    public partial class CreateIdentitySchema : Migration
+    public partial class InitialIdentitytables : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
