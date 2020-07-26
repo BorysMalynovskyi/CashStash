@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashStash.Web", "CashStash.Web\CashStash.Web.csproj", "{F35831B3-B0D9-47A2-A2EA-23BB31F205B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashStash.Data", "CashStash.Data\CashStash.Data.csproj", "{42F20796-40F9-4C78-A6FA-463CB64D338C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashStash.Data", "CashStash.Data\CashStash.Data.csproj", "{42F20796-40F9-4C78-A6FA-463CB64D338C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
